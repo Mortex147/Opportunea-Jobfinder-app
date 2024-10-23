@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889763904115",
+    "project_id": "feecrafirebase",
+    "storage_bucket": "feecrafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889763904115:android:93180acc74811ccc410806",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ufP85IXcqX1m_My4heI0fR33yAw8isE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

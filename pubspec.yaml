@@ -1,0 +1,617 @@
+name: myapp
+description: A exported flutter project from FUNCTION12
+
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.24.2
+  cloud_firestore: ^4.14.0
+  firebase_auth: ^4.16.0
+  firebase_storage: ^11.6.0
+  get: ^4.6.5
+  flutter_screenutil: ^5.6.1
+  phlox_animations: ^2.1.1
+  page_transition: ^2.0.9
+  #______________________________
+  floating_bottom_navigation_bar: ^1.5.2
+  file_picker: ^4.0.10
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/page-1/images/vector.png
+    - assets/page-1/images/.png
+    - assets/page-1/images/lucide-search.png
+    - assets/page-1/images/award.png
+    - assets/page-1/images/iconly-bulk-notification.png
+    - assets/page-1/images/google-2.png
+    - assets/page-1/images/logo-figma-icon-1.png
+    - assets/page-1/images/notification.png
+    - assets/page-1/images/ellipse-461.png
+    - assets/page-1/images/google-2-R53.png
+    - assets/page-1/images/iconly-bulk-bookmark.png
+    - assets/page-1/images/iconly-bold-home.png
+    - assets/page-1/images/logo3.png
+    - assets/page-1/images/icon-credit-card.png
+    - assets/page-1/images/settings.png
+    - assets/page-1/images/lucide-search-i41.png
+    - assets/page-1/images/settings-KaH.png
+    - assets/page-1/images/ellipse-461-98u.png
+    - assets/page-1/images/award-eWd.png
+    - assets/page-1/images/auto-group-b9dt.png
+    - assets/page-1/images/iconly-bulk-ticket.png
+    - assets/page-1/images/iconly-bulk-bookmark-ER7.png
+    - assets/page-1/images/frame-13811.png
+    - assets/page-1/images/icon-credit-card-p8Z.png
+    - assets/page-1/images/items-1.png
+    - assets/page-1/images/auto-group-uxuu.png
+    - assets/page-1/images/logo-figma-icon-1-8cy.png
+    - assets/page-1/images/development-skill.png
+    - assets/page-1/images/auto-group-gnfb.png
+    - assets/page-1/images/designsanstitre-removebg-preview-1.png
+    - assets/page-1/images/layer-1.png
+    - assets/page-1/images/items-1-ihw.png
+    - assets/page-1/images/burger-king-4-1.png
+    - assets/page-1/images/logo3-eUq.png
+    - assets/page-1/images/frame-13811-oaq.png
+    - assets/page-1/images/iconly-bulk-ticket-GUH.png
+    - assets/page-1/images/iconly-bulk-bookmark-aDP.png
+    - assets/page-1/images/closed-email-envelope.png
+    - assets/page-1/images/iconly-bold-home-LxZ.png
+    - assets/page-1/images/designsanstitre-removebg-preview-1-stV.png
+    - assets/page-1/images/icon-eye.png
+    - assets/page-1/images/icon-eye-21f.png
+    - assets/page-1/images/iconly-bulk-ticket-6XK.png
+    - assets/page-1/images/lucide-search-Pkd.png
+    - assets/page-1/images/designsanstitre-removebg-preview-1-kph.png
+    - assets/page-1/images/iconly-bulk-bookmark-bih.png
+    - assets/page-1/images/items-1-yZB.png
+    - assets/page-1/images/items-1-yGD.png
+    - assets/page-1/images/round-yellow-icon-with-a-check-mark.png
+    - assets/page-1/images/password-protection.png
+    - assets/page-1/images/iconly-bulk-bookmark-3jF.png
+    - assets/page-1/images/iconly-bold-home-5hs.png
+    - assets/page-1/images/logo-figma-icon-1-ZE1.png
+    - assets/page-1/images/award-WU1.png
+    - assets/page-1/images/iconly-bulk-ticket-5P7.png
+    - assets/page-1/images/lucide-search-8au.png
+    - assets/page-1/images/items-1-grd.png
+    - assets/page-1/images/frame-13811-DrZ.png
+    - assets/page-1/images/iconly-bulk-notification-ThK.png
+    - assets/page-1/images/lucide-search-EWm.png
+    - assets/page-1/images/search-client.png
+    - assets/page-1/images/man-and-woman-working-on-their-laptops.png
+    - assets/page-1/images/burger-king-4-2.png
+    - assets/page-1/images/ellipse-461-XAh.png
+    - assets/page-1/images/award-MhT.png
+    - assets/page-1/images/frame-13811-EFT.png
+    - assets/page-1/images/burger-king-4-1-Dv1.png
+    - assets/page-1/images/frame.png
+    - assets/page-1/images/lucide-search-EVw.png
+    - assets/page-1/images/iconly-bulk-notification-sub.png
+    - assets/page-1/images/award-oYD.png
+    - assets/page-1/images/iconly-bulk-notification-Dtm.png
+    - assets/page-1/images/iconly-bulk-notification-hj7.png
+    - assets/page-1/images/award-NMP.png
+    - assets/page-1/images/iconly-bulk-ticket-K1b.png
+    - assets/page-1/images/iconly-bulk-bookmark-1td.png
+    - assets/page-1/images/iconly-bold-home-awb.png
+    - assets/page-1/images/items-1-eSm.png
+    - assets/page-1/images/iconly-bold-home-UFK.png
+    - assets/page-1/images/frame-13811-4Em.png
+    - assets/page-1/images/items-1-dFF.png
+    - assets/page-1/images/vector-38.png
+    - assets/page-1/images/iconly-bulk-notification-kDw.png
+    - assets/page-1/images/close-window.png
+    - assets/page-1/images/close-window-AvV.png
+    - assets/page-1/images/iconly-bulk-notification-zed.png
+    - assets/page-1/images/close-window-oMB.png
+    - assets/page-1/images/ellipse-6.png
+    - assets/page-1/images/frame-13811-iND.png
+    - assets/page-1/images/burger-king-4-2-2Bs.png
+    - assets/page-1/images/iconly-bulk-ticket-F6Z.png
+    - assets/page-1/images/items-1-XnZ.png
+    - assets/page-1/images/frame-13811-MHj.png
+    - assets/page-1/images/iconly-bold-home-m6R.png
+    - assets/page-1/images/iconly-bold-home-LLq.png
+    - assets/page-1/images/close-window-4os.png
+    - assets/page-1/images/close-window-CsT.png
+    - assets/page-1/images/close-window-y7X.png
+    - assets/page-1/images/award-5TP.png
+    - assets/page-1/images/iconly-bulk-bookmark-L7j.png
+    - assets/page-1/images/rounded-square-bg.png
+    - assets/page-1/images/close-window-qxu.png
+    - assets/page-1/images/close-window-a3B.png
+    - assets/page-1/images/rounded-square-bg-ptZ.png
+    - assets/page-1/images/filter.png
+    - assets/page-1/images/award-f37.png
+    - assets/page-1/images/auto-group-xsux.png
+    - assets/page-1/images/sell.png
+    - assets/page-1/images/lucide-search-ACq.png
+    - assets/page-1/images/rounded-square-bg-GeV.png
+    - assets/page-1/images/logo-figma-icon-1-pzM.png
+    - assets/page-1/images/icon-credit-card-wTF.png
+    - assets/page-1/images/iconly-bulk-ticket-znm.png
+    - assets/page-1/images/auto-group-ysfk.png
+    - assets/page-1/images/iconly-bulk-bookmark-5Ud.png
+    - assets/page-1/images/lucide-search-1TF.png
+    - assets/page-1/images/checked-checkbox-NEV.png
+    - assets/page-1/images/iconly-bold-home-4VP.png
+    - assets/page-1/images/checked-checkbox-3Uu.png
+    - assets/page-1/images/checked-checkbox-FJZ.png
+    - assets/page-1/images/burger-king-4-1-dA1.png
+    - assets/page-1/images/frame-13811-9QM.png
+    - assets/page-1/images/bg.png
+    - assets/page-1/images/burger-king-4-1-mQV.png
+    - assets/page-1/images/checked-checkbox.png
+    - assets/page-1/images/green-bg.png
+    - assets/page-1/images/wifi.png
+    - assets/page-1/images/image-4.png
+    - assets/page-1/images/development-skill-eFB.png
+    - assets/page-1/images/frame-13811-KbX.png
+    - assets/page-1/images/rectangle-64.png
+    - assets/page-1/images/iconly-bulk-bookmark-5RT.png
+    - assets/page-1/images/iconly-bulk-ticket-cvV.png
+    - assets/page-1/images/lucide-search-akh.png
+    - assets/page-1/images/iconly-bulk-bookmark-Ukq.png
+    - assets/page-1/images/rectangle.png
+    - assets/page-1/images/grommet-icons-google.png
+    - assets/page-1/images/iconly-bold-home-nVX.png
+    - assets/page-1/images/akar-icons-chevron-left.png
+    - assets/page-1/images/mobile-signal.png
+    - assets/page-1/images/image-4-kgH.png
+    - assets/page-1/images/grommet-icons-google-TNH.png
+    - assets/page-1/images/grommet-icons-google-Ezm.png
+    - assets/page-1/images/burger-king-4-2-Dbo.png
+    - assets/page-1/images/image-4-yqs.png
+    - assets/page-1/images/add-properties.png
+    - assets/page-1/images/iconly-bold-home-9tm.png
+    - assets/page-1/images/iconly-bulk-ticket-sMT.png
+    - assets/page-1/images/rectangle-uj7.png
+    - assets/page-1/images/iconly-bulk-bookmark-sWq.png
+    - assets/page-1/images/akar-icons-chevron-left-28q.png
+    - assets/page-1/images/frame-13811-xVf.png
+    - assets/page-1/images/question-mark.png
+    - assets/page-1/images/rectangle-UQh.png
+    - assets/page-1/images/fluent-bookmark-add-20-filled.png
+    - assets/page-1/images/battery.png
+    - assets/page-1/images/frame-13811-Fg5.png
+    - assets/page-1/images/mobile-signal-QYy.png
+    - assets/page-1/images/mask-group.png
+    - assets/page-1/images/search.png
+    - assets/page-1/images/items-1-UTB.png
+    - assets/page-1/images/rectangle-428.png
+    - assets/page-1/images/rounded-square-bg-g7K.png
+    - assets/page-1/images/lucide-search-wcu.png
+    - assets/page-1/images/group.png
+    - assets/page-1/images/ellipse-110-bg.png
+    - assets/page-1/images/logo3-C1F.png
+    - assets/page-1/images/chat.png
+    - assets/page-1/images/iconly-bulk-ticket-jpD.png
+    - assets/page-1/images/confirm.png
+    - assets/page-1/images/social-icons-amazon-wc.png
+    - assets/page-1/images/akar-icons-chevron-left-59b.png
+    - assets/page-1/images/rectangle-428-265.png
+    - assets/page-1/images/wifi-HjF.png
+    - assets/page-1/images/ellipse-109-bg.png
+    - assets/page-1/images/fluent-bookmark-add-20-filled-mUd.png
+    - assets/page-1/images/rectangle-kLy.png
+    - assets/page-1/images/rectangle-JEd.png
+    - assets/page-1/images/iconly-bulk-notification-hZb.png
+    - assets/page-1/images/ellipse-6-sb7.png
+    - assets/page-1/images/battery-eVF.png
+    - assets/page-1/images/wifi-jCV.png
+    - assets/page-1/images/rectangle-AFj.png
+    - assets/page-1/images/iconly-bold-home-sfw.png
+    - assets/page-1/images/iconly-bold-home-SAd.png
+    - assets/page-1/images/iconly-bulk-bookmark-VZT.png
+    - assets/page-1/images/rectangle-428-5Fw.png
+    - assets/page-1/images/base.png
+    - assets/page-1/images/ellipse-109.png
+    - assets/page-1/images/green-bg-YqF.png
+    - assets/page-1/images/social-icons-mastercard-wc.png
+    - assets/page-1/images/fluent-bookmark-add-20-filled-Mr1.png
+    - assets/page-1/images/wifi-LS5.png
+    - assets/page-1/images/lucide-search-sgD.png
+    - assets/page-1/images/iconly-bulk-ticket-Cjb.png
+    - assets/page-1/images/group-SFB.png
+    - assets/page-1/images/iconly-bulk-paper.png
+    - assets/page-1/images/iconly-bulk-ticket-Cem.png
+    - assets/page-1/images/iconly-bulk-bookmark-FVs.png
+    - assets/page-1/images/card-payment.png
+    - assets/page-1/images/group-Loj.png
+    - assets/page-1/images/battery-acq.png
+    - assets/page-1/images/rectangle-XkM.png
+    - assets/page-1/images/frame-13811-Bbw.png
+    - assets/page-1/images/mask-group-ZF7.png
+    - assets/page-1/images/rectangle-y13.png
+    - assets/page-1/images/iconly-bulk-paper-f8V.png
+    - assets/page-1/images/iconly-bulk-ticket-xFB.png
+    - assets/page-1/images/lucide-search-Jbs.png
+    - assets/page-1/images/frame-13811-T7w.png
+    - assets/page-1/images/lucide-search-yxm.png
+    - assets/page-1/images/iconly-bold-home-a8H.png
+    - assets/page-1/images/social-icons-apple-wc.png
+    - assets/page-1/images/mobile-signal-1gm.png
+    - assets/page-1/images/iconly-bold-home-pZf.png
+    - assets/page-1/images/iconly-bulk-notification-e6m.png
+    - assets/page-1/images/student-wallet.png
+    - assets/page-1/images/akar-icons-chevron-left-Cx9.png
+    - assets/page-1/images/group-24.png
+    - assets/page-1/images/vector-38-JjT.png
+    - assets/page-1/images/social-icons-amazon-wc-9Po.png
+    - assets/page-1/images/rectangle-428-dpm.png
+    - assets/page-1/images/social-icons-apple-wc-x2M.png
+    - assets/page-1/images/group-7Bw.png
+    - assets/page-1/images/mobile-signal-EZF.png
+    - assets/page-1/images/frame-13811-fh3.png
+    - assets/page-1/images/card-payment-QVX.png
+    - assets/page-1/images/image-8.png
+    - assets/page-1/images/mobile-signal-r4y.png
+    - assets/page-1/images/frame-13811-aFs.png
+    - assets/page-1/images/iconly-bulk-ticket-VjX.png
+    - assets/page-1/images/rectangle-428-wf7.png
+    - assets/page-1/images/items-1-q4u.png
+    - assets/page-1/images/image-8-9rH.png
+    - assets/page-1/images/rectangle-428-2V7.png
+    - assets/page-1/images/rectangle-64-k73.png
+    - assets/page-1/images/iconly-bulk-bookmark-YFj.png
+    - assets/page-1/images/group-24-BSq.png
+    - assets/page-1/images/icon.png
+    - assets/page-1/images/image-5.png
+    - assets/page-1/images/fluent-bookmark-add-20-filled-Rw7.png
+    - assets/page-1/images/base-v3B.png
+    - assets/page-1/images/battery-6DF.png
+    - assets/page-1/images/green-bg-8S5.png
+    - assets/page-1/images/green-bg-dPw.png
+    - assets/page-1/images/green-bg-MQM.png
+    - assets/page-1/images/grommet-icons-google-wLV.png
+    - assets/page-1/images/akar-icons-chevron-left-Rnh.png
+    - assets/page-1/images/battery-1X7.png
+    - assets/page-1/images/rectangle-428-LTs.png
+    - assets/page-1/images/iconly-bulk-ticket-JXs.png
+    - assets/page-1/images/group-Dqj.png
+    - assets/page-1/images/notch.png
+    - assets/page-1/images/rectangle-428-n3s.png
+    - assets/page-1/images/items-1-z3T.png
+    - assets/page-1/images/social-icons-mastercard-wc-aob.png
+    - assets/page-1/images/wifi-G7K.png
+    - assets/page-1/images/akar-icons-chevron-left-Pf7.png
+    - assets/page-1/images/green-bg-9ms.png
+    - assets/page-1/images/iconly-bulk-bookmark-m6q.png
+    - assets/page-1/images/frame-13811-UC1.png
+    - assets/page-1/images/frame-13811-Q5f.png
+    - assets/page-1/images/iconly-bulk-bookmark-G6u.png
+    - assets/page-1/images/notch-REh.png
+    - assets/page-1/images/image-8-ZFX.png
+    - assets/page-1/images/iconly-bold-home-Me9.png
+    - assets/page-1/images/iconly-bulk-ticket-hJZ.png
+    - assets/page-1/images/iconly-bulk-ticket-RrH.png
+    - assets/page-1/images/lucide-search-vY1.png
+    - assets/page-1/images/illustration.png
+    - assets/page-1/images/iconly-bulk-bookmark-KNZ.png
+    - assets/page-1/images/iconly-bold-home-hjo.png
+    - assets/page-1/images/burger-king-4-1-mh3.png
+    - assets/page-1/images/burger-king-4-1-vmF.png
+    - assets/page-1/images/iconly-bulk-ticket-G5f.png
+    - assets/page-1/images/wifi-Rb7.png
+    - assets/page-1/images/grommet-icons-google-3Zs.png
+    - assets/page-1/images/lucide-search-yWR.png
+    - assets/page-1/images/group-Yvd.png
+    - assets/page-1/images/filter-5PP.png
+    - assets/page-1/images/iconly-bold-home-Ri9.png
+    - assets/page-1/images/burger-king-4-1-7dT.png
+    - assets/page-1/images/items-1-fQ5.png
+    - assets/page-1/images/rectangle-vqo.png
+    - assets/page-1/images/balance.png
+    - assets/page-1/images/iconly-bulk-bookmark-niu.png
+    - assets/page-1/images/lucide-search-HPo.png
+    - assets/page-1/images/mobile-signal-dTf.png
+    - assets/page-1/images/lucide-search-Q8H.png
+    - assets/page-1/images/battery-8py.png
+    - assets/page-1/images/back.png
+    - assets/page-1/images/balance-KP7.png
+    - assets/page-1/images/iconly-bold-home-w6y.png
+    - assets/page-1/images/iconly-bulk-bookmark-k6M.png
+    - assets/page-1/images/rectangle-75.png
+    - assets/page-1/images/auto-group-g3fw.png
+    - assets/page-1/images/akar-icons-chevron-left-Xgd.png
+    - assets/page-1/images/bg-Jph.png
+    - assets/page-1/images/image-8-NUR.png
+    - assets/page-1/images/iconly-bold-home-3Yd.png
+    - assets/page-1/images/fluent-bookmark-add-20-filled-TAR.png
+    - assets/page-1/images/image-8-3MT.png
+    - assets/page-1/images/search-PHT.png
+    - assets/page-1/images/frame-13811-FMb.png
+    - assets/page-1/images/iconly-bold-home-XCM.png
+    - assets/page-1/images/lucide-search-iWu.png
+    - assets/page-1/images/iconly-bulk-ticket-pjb.png
+    - assets/page-1/images/iconly-bulk-bookmark-5YV.png
+    - assets/page-1/images/rectangle-CrM.png
+    - assets/page-1/images/image-8-xCZ.png
+    - assets/page-1/images/iconly-bulk-bookmark-4qX.png
+    - assets/page-1/images/akar-icons-chevron-left-dCM.png
+    - assets/page-1/images/rectangle-10.png
+    - assets/page-1/images/logo-figma-icon-1-8sK.png
+    - assets/page-1/images/iconly-bold-home-ZXf.png
+    - assets/page-1/images/akar-icons-chevron-left-5oP.png
+    - assets/page-1/images/search-Dxm.png
+    - assets/page-1/images/logo-figma-icon-1-gUy.png
+    - assets/page-1/images/search-o4D.png
+    - assets/page-1/images/iconly-bulk-ticket-djw.png
+    - assets/page-1/images/image-4-4Hf.png
+    - assets/page-1/images/rectangle-72.png
+    - assets/page-1/images/frame-13811-SSu.png
+    - assets/page-1/images/frame-13811-M7w.png
+    - assets/page-1/images/ellipse-109-b2q.png
+    - assets/page-1/images/iconly-bulk-notification-tFK.png
+    - assets/page-1/images/illustrasi.png
+    - assets/page-1/images/ellipse-6-eeu.png
+    - assets/page-1/images/frame-13811-zXb.png
+    - assets/page-1/images/iconly-bulk-ticket-f7o.png
+    - assets/page-1/images/lucide-search-mXw.png
+    - assets/page-1/images/frame-13811-kDP.png
+    - assets/page-1/images/vector-38-Y8H.png
+    - assets/page-1/images/burger-king-4-1-T9s.png
+    - assets/page-1/images/iconly-bulk-bookmark-UU9.png
+    - assets/page-1/images/image-33.png
+    - assets/page-1/images/iconly-bold-home-BUD.png
+    - assets/page-1/images/items-1-pUH.png
+    - assets/page-1/images/rectangle-64-AmX.png
+    - assets/page-1/images/arrows-arrow-top.png
+    - assets/page-1/images/wallet.png
+    - assets/page-1/images/vector-osw.png
+    - assets/page-1/images/iconly-bulk-ticket-PpD.png
+    - assets/page-1/images/iconly-bulk-ticket-6PB.png
+    - assets/page-1/images/iconly-bulk-paper-SLR.png
+    - assets/page-1/images/shoppingbag.png
+    - assets/page-1/images/group-22.png
+    - assets/page-1/images/award-yZK.png
+    - assets/page-1/images/image-25.png
+    - assets/page-1/images/lucide-search-Dh3.png
+    - assets/page-1/images/group-1.png
+    - assets/page-1/images/arrows-arrow-top-WJm.png
+    - assets/page-1/images/group-22-AXj.png
+    - assets/page-1/images/iconly-bold-home-gRP.png
+    - assets/page-1/images/arrows-arrow-top-MaH.png
+    - assets/page-1/images/card-payment-sgu.png
+    - assets/page-1/images/group-8.png
+    - assets/page-1/images/paypal.png
+    - assets/page-1/images/rectangle-428-W3K.png
+    - assets/page-1/images/group-1-4CZ.png
+    - assets/page-1/images/image-40.png
+    - assets/page-1/images/group-24-5ry.png
+    - assets/page-1/images/arrows-arrow-top-2YZ.png
+    - assets/page-1/images/arrows-arrow-top-KCD.png
+    - assets/page-1/images/iconly-bulk-bookmark-pxq.png
+    - assets/page-1/images/rectangle-428-eDf.png
+    - assets/page-1/images/social-icons-mastercard-wc-gQZ.png
+    - assets/page-1/images/items-1-ymT.png
+    - assets/page-1/images/vector-dgV.png
+    - assets/page-1/images/wallet-x73.png
+    - assets/page-1/images/rectangle-428-TK7.png
+    - assets/page-1/images/rectangle-64-keD.png
+    - assets/page-1/images/group-22-Wyf.png
+    - assets/page-1/images/image-38.png
+    - assets/page-1/images/shoppingbag-orh.png
+    - assets/page-1/images/group-1-tBK.png
+    - assets/page-1/images/group-1-yMj.png
+    - assets/page-1/images/paypal-pcZ.png
+    - assets/page-1/images/arrowtotop.png
+    - assets/page-1/images/arrows-arrow-top-BXP.png
+    - assets/page-1/images/frame-13811-Jvd.png
+    - assets/page-1/images/mask-group-guo.png
+    - assets/page-1/images/rectangle-428-81f.png
+    - assets/page-1/images/shoppingbag-fQD.png
+    - assets/page-1/images/battery-5rZ.png
+    - assets/page-1/images/social-icons-apple-wc-sSy.png
+    - assets/page-1/images/group-8-njb.png
+    - assets/page-1/images/iconly-bulk-notification-u7F.png
+    - assets/page-1/images/social-icons-amazon-wc-87j.png
+    - assets/page-1/images/arrows-arrow-top-w7X.png
+    - assets/page-1/images/wifi-WjK.png
+    - assets/page-1/images/base-vAm.png
+    - assets/page-1/images/paypal-6hw.png
+    - assets/page-1/images/auto-group-lqev.png
+    - assets/page-1/images/mask-group-GjT.png
+    - assets/page-1/images/ellipse-6-1U5.png
+    - assets/page-1/images/group-1-cQZ.png
+    - assets/page-1/images/frame-13811-U6u.png
+    - assets/page-1/images/vector-38-WU9.png
+    - assets/page-1/images/write.png
+    - assets/page-1/images/options.png
+    - assets/page-1/images/mobile-signal-ass.png
+    - assets/page-1/images/wallet-FZB.png
+    - assets/page-1/images/balance-uWZ.png
+    - assets/page-1/images/group-8-oyT.png
+    - assets/page-1/images/iconly-bulk-bookmark-kGH.png
+    - assets/page-1/images/vector-38-W1f.png
+    - assets/page-1/images/akar-icons-chevron-left-fYm.png
+    - assets/page-1/images/iconly-bold-home-wtD.png
+    - assets/page-1/images/akar-icons-cross.png
+    - assets/page-1/images/arrows-arrow-top-qE9.png
+    - assets/page-1/images/lucide-search-TtD.png
+    - assets/page-1/images/iconly-bold-home-Go3.png
+    - assets/page-1/images/icon-search.png
+    - assets/page-1/images/icon-call.png
+    - assets/page-1/images/lucide-search-YTK.png
+    - assets/page-1/images/icon-search-G9f.png
+    - assets/page-1/images/arrows-arrow-top-HoF.png
+    - assets/page-1/images/akar-icons-chevron-left-AbT.png
+    - assets/page-1/images/double-ceklis.png
+    - assets/page-1/images/rectangle-95.png
+    - assets/page-1/images/rectangle-95-czm.png
+    - assets/page-1/images/frame-13811-cUH.png
+    - assets/page-1/images/attachment.png
+    - assets/page-1/images/ellipse-6-kEm.png
+    - assets/page-1/images/ellipse-50.png
+    - assets/page-1/images/fluent-delete-24-regular.png
+    - assets/page-1/images/double-ceklis-Nru.png
+    - assets/page-1/images/rectangle-98.png
+    - assets/page-1/images/rectangle-64-nY9.png
+    - assets/page-1/images/options-CJD.png
+    - assets/page-1/images/icon-fhb.png
+    - assets/page-1/images/vector-Qv5.png
+    - assets/page-1/images/rectangle-98-VRj.png
+    - assets/page-1/images/ellipse-49.png
+    - assets/page-1/images/mask-group-ErD.png
+    - assets/page-1/images/akar-icons-chevron-left-9Jq.png
+    - assets/page-1/images/mask-group-XVj.png
+    - assets/page-1/images/group-59.png
+    - assets/page-1/images/frame-13811-gw3.png
+    - assets/page-1/images/iconly-bulk-bookmark-pjj.png
+    - assets/page-1/images/fluent-delete-24-regular-38d.png
+    - assets/page-1/images/iconly-bold-home-mSH.png
+    - assets/page-1/images/iconly-bold-home-u45.png
+    - assets/page-1/images/iconly-bulk-bookmark-6Bj.png
+    - assets/page-1/images/ui-chevron-rigth.png
+    - assets/page-1/images/iconly-bulk-ticket-Gdw.png
+    - assets/page-1/images/double-ceklis-5jf.png
+    - assets/page-1/images/ellipse-48-bg.png
+    - assets/page-1/images/iconly-bulk-bookmark-qK7.png
+    - assets/page-1/images/lucide-search-PeH.png
+    - assets/page-1/images/ellipse-6-36y.png
+    - assets/page-1/images/ui-chevron-rigth-TXf.png
+    - assets/page-1/images/ellipse-49-NBK.png
+    - assets/page-1/images/fluent-delete-24-regular-6Ju.png
+    - assets/page-1/images/lucide-search-SpR.png
+    - assets/page-1/images/togle.png
+    - assets/page-1/images/iconly-bulk-ticket-7yj.png
+    - assets/page-1/images/frame-13811-VE9.png
+    - assets/page-1/images/ellipse-6-CDP.png
+    - assets/page-1/images/ui-chevron-rigth-ECh.png
+    - assets/page-1/images/akar-icons-chevron-left-RW1.png
+    - assets/page-1/images/tagsquare.png
+    - assets/page-1/images/dribbble-1.png
+    - assets/page-1/images/ui-chevron-rigth-2BB.png
+    - assets/page-1/images/auto-group-cbbo.png
+    - assets/page-1/images/iconly-bulk-ticket-xQR.png
+    - assets/page-1/images/ellipse-48-bg-9k5.png
+    - assets/page-1/images/illustration-rLH.png
+    - assets/page-1/images/google-1.png
+    - assets/page-1/images/iconly-bulk-ticket-7Um.png
+    - assets/page-1/images/ellipse-48-bg-3p5.png
+    - assets/page-1/images/group-60.png
+    - assets/page-1/images/select.png
+    - assets/page-1/images/select-5aZ.png
+    - assets/page-1/images/select-H7X.png
+    - assets/page-1/images/select-V7X.png
+    - assets/page-1/images/select-HB7.png
+    - assets/page-1/images/select-1P7.png
+    - assets/page-1/images/select-rLR.png
+    - assets/page-1/images/select-mry.png
+    - assets/page-1/images/.png
+    - assets/page-1/images/select-orR.png
+    - assets/page-1/images/group-43.png
+    - assets/page-1/images/icon-3Vb.png
+    - assets/page-1/images/group-43-AeD.png
+    - assets/page-1/images/back-gjT.png
+    - assets/page-1/images/select-KdB.png
+    - assets/page-1/images/select-NKs.png
+    - assets/page-1/images/group-45.png
+    - assets/page-1/images/icon-DVs.png
+    - assets/page-1/images/icon-Xgd.png
+    - assets/page-1/images/icon-tGH.png
+    - assets/page-1/images/group-1-5Um.png
+    - assets/page-1/images/select-cMX.png
+    - assets/page-1/images/icon-eye-eL9.png
+    - assets/page-1/images/select-ogm.png
+    - assets/page-1/images/icon-qJR.png
+    - assets/page-1/images/back-Rn1.png
+    - assets/page-1/images/back-q9s.png
+    - assets/page-1/images/icon-eye-SHo.png
+    - assets/page-1/images/group-1-4VX.png
+    - assets/page-1/images/select-p1F.png
+    - assets/page-1/images/group-45-egq.png
+    - assets/page-1/images/icon-eye-yy3.png
+    - assets/page-1/images/icon-zqF.png
+    - assets/page-1/images/auto-group-msnh.png
+    - assets/page-1/images/round-yellow-icon-with-a-check-mark.png
+    - assets/page-1/images/img_exclude.png
+    - assets/
+    - assets/images/
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
