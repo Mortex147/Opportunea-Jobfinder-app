@@ -1,5 +1,5 @@
-# Opportunea-Jobfinder-app
-Opportunea is a job finder app developped with Flutter &amp; Firebase
+# Opportunea is a job finder app developped with Flutter & Firebase
+
 ![PNG](https://github.com/user-attachments/assets/73495403-b958-4225-a797-9c4bc9d0e623)
 ![PNG](https://github.com/user-attachments/assets/d2854b73-3245-4a6e-a4a7-0979e0986780)
 ![1](https://github.com/user-attachments/assets/8c9d264f-f213-41d4-8fc3-ec5789877b87)
